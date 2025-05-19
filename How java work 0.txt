@@ -1,0 +1,39 @@
+#Java Program Execution Flow Diagram
+# java is a portable language 
+
+[Java Source Code (.java)]
+        |
+        |  (javac - Java Compiler, part of JDK)
+        ↓
+[Bytecode File (.class)]
+        |
+        |  (java - Java Launcher, uses JRE)
+        ↓
+[Java Runtime Environment (JRE)]
+        |
+        |  (includes)
+        ↓
+[Java Virtual Machine (JVM)]
+        |
+        ↓
+[Operating System Execution]
+
+
+#Relationship table 
+| **Component**                      | **Purpose**                                                                 |
+| ---------------------------------- | --------------------------------------------------------------------------- |
+| **JDK (Java Development Kit)**     | For compiling and running Java programs (includes JRE + tools like `javac`) |
+| **JRE (Java Runtime Environment)** | To run Java programs only (includes JVM + libraries)                        |
+| **JVM (Java Virtual Machine)**     | Actually runs the `.class` bytecode on the system                           |
+
+
+#Relationship Diagram
++------------------------------+
+|         JDK (Superset)       |   ← Full development kit
+|  +------------------------+  |
+|  |      JRE (Subset)      |  |   ← Runtime environment
+|  |  +------------------+  |  |
+|  |  |   JVM (Subset)   |  |  |   ← Executes bytecode
+|  |  +------------------+  |  |
+|  +------------------------+  |
++------------------------------+
