@@ -1,0 +1,171 @@
+🟦 OBJECT-ORIENTED PROGRAMMING (OOPs) IN JAVA – DETAILED SUMMARY 🟦
+
+1️⃣ CLASS:
+🔹 A blueprint/template that defines attributes (variables) and behaviors (methods).
+🔹 Doesn’t consume memory until an object is created.
+🔸 Example:
+    class Car {
+        String color;
+        void drive() {
+            System.out.println("Driving...");
+        }
+    }
+
+2️⃣ OBJECT:
+🔹 A real-world entity created from a class.
+🔹 It has its own state (data) and behavior (methods).
+🔸 Example:
+    Car c = new Car();
+
+━━━━━━━━━━━━━━━━━━━━━━
+🟨 FOUR PILLARS OF OOPs:
+━━━━━━━━━━━━━━━━━━━━━━
+
+3️⃣ ENCAPSULATION:
+🔹 Wrapping data and methods into a single unit (class).
+🔹 Helps in data hiding using `private` access modifier.
+🔹 Access is provided via `getters` and `setters`.
+🔸 Example:
+    class Student {
+        private int marks;
+        public void setMarks(int m) { marks = m; }
+        public int getMarks() { return marks; }
+    }
+
+4️⃣ INHERITANCE:
+🔹 Mechanism where one class acquires properties of another.
+🔹 Promotes reusability and method overriding.
+🔸 Keywords: `extends`
+🔸 Types: Single, Multilevel, Hierarchical
+🔸 Example:
+    class Animal { void eat() {} }
+    class Dog extends Animal { void bark() {} }
+
+5️⃣ POLYMORPHISM:
+🔹 Ability to take many forms.
+🔹 Types:
+   ✅ Compile-Time (Method Overloading): Same method name, different parameters.
+   ✅ Run-Time (Method Overriding): Same method name, same parameters, different classes.
+🔸 Example (Overloading):
+    int add(int a, int b) {...}
+    double add(double a, double b) {...}
+🔸 Example (Overriding):
+    class A { void show() {} }
+    class B extends A { void show() {} }
+
+6️⃣ ABSTRACTION:
+🔹 Hiding internal details and showing only the necessary functionality.
+🔹 Achieved using:
+   ✅ Abstract Class (`abstract class`)
+   ✅ Interface (`interface`)
+🔸 Abstract class can have both abstract & concrete methods.
+🔸 Interface contains only abstract methods (Java 8+ allows default/static methods).
+🔸 Example:
+    abstract class Shape { abstract void draw(); }
+
+━━━━━━━━━━━━━━━━━━━━━━
+🟩 ADDITIONAL OOP CONCEPTS:
+━━━━━━━━━━━━━━━━━━━━━━
+
+7️⃣ INTERFACE:
+🔹 A contract for classes to implement.
+🔹 Used for full abstraction & multiple inheritance.
+🔸 Syntax:
+    interface Vehicle { void start(); }
+    class Car implements Vehicle { public void start() {} }
+
+8️⃣ CONSTRUCTOR:
+🔹 Special method that runs when an object is created.
+🔹 Same name as class, no return type.
+🔸 Types: Default, Parameterized, Copy
+🔸 Example:
+    class Person {
+        Person() {
+            System.out.println("Constructor called");
+        }
+    }
+
+9️⃣ THIS KEYWORD:
+🔹 Refers to the current object.
+🔹 Resolves naming conflicts between instance and local variables.
+🔸 Example:
+    class Test {
+        int x;
+        Test(int x) {
+            this.x = x;
+        }
+    }
+
+━━━━━━━━━━━━━━━━━━━━━━
+✅ QUICK SUMMARY TABLE:
+━━━━━━━━━━━━━━━━━━━━━━
+
+| Concept        | Purpose / Role                          |
+|----------------|------------------------------------------|
+| Class          | Blueprint for creating objects           |
+| Object         | Instance of class                        |
+| Encapsulation  | Data hiding, controlled access           |
+| Inheritance    | Code reuse via parent-child relation     |
+| Polymorphism   | Same action in different forms           |
+| Abstraction    | Hides complexity, shows essential info   |
+| Interface      | Achieves multiple inheritance, abstraction |
+| Constructor    | Initializes object during creation       |
+| this keyword   | Refers to current object                 |
+
+🟣 Java is purely object-oriented (except for primitives).
+🟣 OOPs promotes code modularity, reusability, and maintainability.
+
+
+.............................................................................................................
+
+
+| Specifier   | Class | Package | Subclass (in another package) | global |
+| ----------- | ----- | ------- | ----------------------------- | ----- |
+| `public`    | ✅     | ✅       | ✅                         | ✅   |
+| `protected` | ✅     | ✅       | ✅                         | ❌   |
+| (default)   | ✅     | ✅       | ❌                         | ❌   |
+| `private`   | ✅     | ❌       | ❌                         | ❌   |
+
+
+
+.............................................................................................................
+// 📦 Java Constructor – Theory Summary
+
+// ➤ A constructor is a special method used to initialize objects in Java.
+// ➤ It has the same name as the class and has no return type (not even void).
+// ➤ It is called automatically when an object is created using the `new` keyword.
+// ➤ Constructors can be overloaded (multiple constructors with different parameters).
+// ➤ If no constructor is defined, Java provides a default constructor.
+// ➤ Types of Constructors:
+//    - Default Constructor: Takes no parameters.
+//    - Parameterized Constructor: Takes arguments to initialize fields.
+//    - Copy Constructor: Initializes an object using another object (created manually).
+// ➤ The `this()` keyword can be used to call one constructor from another in the same class.
+// ➤ Constructors are important for setting initial values and ensuring object readiness.
+
+
+
+........................................................................................................................
+| Feature      | Shallow Copy                       | Deep Copy                        |
+| ------------ | ---------------------------------- | -------------------------------- |
+| Memory       | Copies references                  | Copies actual objects/arrays     |
+| Independence | Not independent (linked objects)   | Fully independent                |
+| Performance  | Faster (less memory usage)         | Slower (more memory used)        |
+| When to use  | When shared object state is needed | When full separation is required |
+
+
+📦 Shallow Copy vs Deep Copy in Java
+
+🔹 Shallow Copy:
+- Copies only the references to objects.
+- Original and copied objects share the same memory for referenced fields.
+- Changes in one affect the other.
+- Default `Object.clone()` does shallow copy.
+- Suitable when shared access is acceptable.
+
+🔹 Deep Copy:
+- Copies all fields, including new copies of referenced objects.
+- Original and copied objects are fully independent.
+- Changes in one do NOT affect the other.
+- Requires manual copying of nested objects/arrays.
+- Suitable when isolation of objects is needed.
