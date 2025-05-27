@@ -169,3 +169,185 @@
 - Changes in one do NOT affect the other.
 - Requires manual copying of nested objects/arrays.
 - Suitable when isolation of objects is needed.
+
+
+
+...................................................................................................................
+
+// ❌ Does Java have destructors?
+// No, Java does not have destructors like C++.
+
+// ✅ Why not?
+// // In Java, memory management is automatic. The Garbage Collector 
+// //takes care of deleting objects that are no longer in use. Because of this, Java doesn’t need destructors like C++.
+
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+
+✅ Inheritance in Java – Simple Explanation:
+Inheritance in Java is a mechanism where one class (child) can use the properties and methods of another class (parent).
+
+It allows code reusability and represents a real-world "is-a" relationship.
+
+
+
+.......................................................................................................................................
+🔰 TYPES OF INHERITANCE IN JAVA 🔰
+
+             [Single Inheritance]
+                    ┌───────┐
+                    │Animal│
+                    └──┬────┘
+                       │
+                 ┌─────▼─────┐
+                 │   Dog     │
+                 └───────────┘
+       (Dog inherits from Animal)
+
+────────────────────────────────────────────
+
+            [Multilevel Inheritance]
+                    ┌───────┐
+                    │Animal│
+                    └──┬────┘
+                       │
+                 ┌─────▼─────┐
+                 │   Dog     │
+                 └──┬────────┘
+                    │
+              ┌─────▼──────┐
+              │  Puppy     │
+              └────────────┘
+     (Puppy → Dog → Animal)
+
+────────────────────────────────────────────
+
+          [Hierarchical Inheritance]
+                    ┌───────┐
+                    │Animal│
+                    └──┬────┘
+          ┌──────────┼───────────┐
+     ┌────▼────┐ ┌────▼────┐ ┌────▼────┐
+     │   Dog   │ │   Cat   │ │  Cow    │
+     └─────────┘ └─────────┘ └─────────┘
+   (Multiple classes inherit from Animal)
+
+────────────────────────────────────────────
+
+🔴 Note: Java does NOT support Multiple Inheritance with classes
+          (to avoid ambiguity, like the "Diamond Problem").
+          Multiple Inheritance using Interfaces (✔️)
+
+✅ But Java supports Multiple Inheritance using **Interfaces**.
+
+
+
+
+
+                    📘 TYPES OF INHERITANCE IN JAVA
+
+                                [INHERITANCE]
+                                      |
+     -----------------------------------------------------------------
+     |                 |                   |                         |
+[SINGLE]         [MULTILEVEL]       [HIERARCHICAL]       [MULTIPLE - via INTERFACES]
+     |                 |                   |                         |
+Class A           Class A             Class A              interface A     interface B
+   |                  |                   |                         \         /
+Class B           Class B             Class B                       Class C
+                  |                   |
+               Class C            Class C
+
+
+
+
+
+| Inheritance Type      | Supported in Java? | How?                                     |
+| --------------------- | ------------------ | ---------------------------------------- |
+| Single                | ✅                  | `class B extends A`                      |
+| Multilevel            | ✅                  | `class C extends B extends A`            |
+| Hierarchical          | ✅                  | `class B extends A`, `class C extends A` |
+| Multiple (Classes)    | ❌                  | Not supported                            |
+| Multiple (Interfaces) | ✅                  | `class D implements A, B`                |
+
+
+
+
+
+
+
+
+
+
+
+
+
+.........................................................................................................................................
+Polymorphism in Java
+Polymorphism means "many forms." It is one of the core concepts of Object-Oriented Programming that allows methods or objects to behave differently based on the context.
+
+In Java, polymorphism enables a single method or object to take multiple forms, making programs more flexible and extensible.
+
+Types of Polymorphism:
+Compile-Time Polymorphism (Method Overloading):
+This occurs when multiple methods have the same name but differ in the number, type, or sequence of parameters within the same class. The method to be executed is determined at compile time.
+
+Runtime Polymorphism (Method Overriding):
+This occurs when a subclass provides a specific implementation of a method that is already defined in its superclass. The method to be executed is decided at runtime based on the object being referred to, enabling dynamic method dispatch.
+
+
+
+
+..................................................................................................................................................
+A package (like library in cpp )in Java is a namespace that organizes a set of related classes and interfaces. Conceptually, it’s like a folder or directory that groups related files together.
+Built-in Packages: Provided by Java API (e.g., java.lang, java.util, java.io)
+
+User-defined Packages: Created by programmers to organize their own classes.
+
+
+............................................................................................................................................
+✅ Abstraction in Java – Theory
+Definition:
+Abstraction is the process of hiding the internal implementation details and showing only the essential features of an object.
+
+-hide unnacessary  think and show important think 
+-use with the help of class and interface 
+
+1   abstract class 
+=Declared using the abstract keyword.
+
+=Can have abstract methods (without body) and concrete methods (with body).
+
+=Cannot be instantiated directly.
+
+= can not make a object but make a constructor 
+
+
+2 interface / multiple inheritance
+= it is blueprint of a class
+=An interface in Java is a blueprint of a class. It is used to achieve abstraction and multiple inheritance.
+100% abstraction 
+
+=use implement insted of extends
+= use interface  instid of class 
+= final public and static variable in interface 
+
+..................................................................................................................................
+**Static meyword **
+| Feature        | Can Use Static? | Notes                          |
+| -------------- | --------------- | ------------------------------ |
+| Variable       | ✅ Yes           | Shared among all objects       |
+| Method         | ✅ Yes           | Can't use `this` keyword       |
+| Block          | ✅ Yes           | Executes once at class loading |
+| Class (Nested) | ✅ Yes           | Only inner class can be static |
+The static keyword is used for memory management. It means the member (variable or method) belongs to the class, not to objects.
+
+it is use to share the same variable or method of a given class 
+| Feature                | Benefit                                                             |
+| ---------------------- | ------------------------------------------------------------------- |
+| 🔹 **Static Variable** | Saves memory – only one copy shared by all objects                  |
+| 🔹 **Static Method**   | Can be called without creating an object (fast & efficient)         |
+| 🔹 **Static Block**    | Useful for initializing static variables during class loading       |
+| 🔹 **Static Class**    | Helps logically group classes, especially in nested class scenarios |
+..............................................................................................................................
+
