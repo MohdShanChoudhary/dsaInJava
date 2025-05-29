@@ -350,4 +350,14 @@ it is use to share the same variable or method of a given class
 | 🔹 **Static Block**    | Useful for initializing static variables during class loading       |
 | 🔹 **Static Class**    | Helps logically group classes, especially in nested class scenarios |
 ..............................................................................................................................
+super keyword 
+
+It is used to access parent class members (variables, methods, or constructors) from a subclass.
+Common uses:
+Call parent class constructor.
+Access parent class methods when overridden.
+Access parent class variables if hidden by subclass variables.
+
+
+,,,,,,,,,.....................................................................................................................
 

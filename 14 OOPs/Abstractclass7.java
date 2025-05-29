@@ -1,6 +1,6 @@
 
-abstract class Animal {
-    abstract void sound();
+abstract class Animal {                     // WE CAN NOT CREATE AN OBJECT OF ABSTRACT CLASS 
+    abstract void sound();               // THEY HAVE CONSTRUCTOR TO SET  INITAL VALUE 
 
     void eat() {
         System.out.println("This animal eats food.");
@@ -25,7 +25,7 @@ public class Abstractclass7 {
 //    abstract class 
 // =Declared using the abstract keyword.
 
-// =Can have abstract methods (without body) and concrete methods (with body).
+// =Can have abstract methods (without body) 
 
 // =Cannot be instantiated directly.
 

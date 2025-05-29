@@ -46,4 +46,5 @@ class Cat implements Animal {
 
 // =use implement insted of extends
 // = use interface  instid of class 
+// ALL METHOD ARE PUBLIC ABSTRACTION AND WITHOUT IMPLIMENTATION 
 // = final public and static variable in interface 
