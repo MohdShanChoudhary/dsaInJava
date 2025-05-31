@@ -1,0 +1,5 @@
+Stact overflow 
+
+Stack Overflow in Java means the program used too much memory by calling functions again and again (usually in a loop), 
+and the memory for running functions (called the stack) got full. This causes the program to crash with a StackOverflowError.
+so we need a base case 

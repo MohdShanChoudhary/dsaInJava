@@ -1,0 +1,3 @@
+Ayyar list is dynamic 
+store integer type of data 
+integr is a class 
