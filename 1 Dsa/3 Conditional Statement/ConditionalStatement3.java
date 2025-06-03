@@ -39,7 +39,6 @@ public class ConditionalStatement3 {
             System.out.println("It is a odd no.");
         }
 
-        // else if   -  agar if true ho gai to else wali check nahi hogi 
         // grataer in 3 number 
         int num1 = 1;
         int num2 = 2;

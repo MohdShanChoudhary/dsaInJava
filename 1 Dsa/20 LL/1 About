@@ -1,0 +1,53 @@
+✅ What is a Linked List?
+A Linked List is a linear data structure in which each element is a node.
+Each node contains:
+
+Data (the value)
+
+Next (a reference to the next node)
+
+Unlike arrays, linked lists do not store data in contiguous memory.
+Instead, they use pointers to connect each node.
+
+✅ Why Use Linked List?
+Dynamic size (no need to define size in advance like arrays)
+
+Easy insertion/deletion (especially at beginning and middle)
+
+✅ Types of Linked List:
+Type	Description
+Singly Linked List	Each node points to the next node only
+Doubly Linked List	Each node points to both next and previous nodes
+Circular Linked List	Last node points to the first node
+
+✅ Operations in Linked List:
+Operation	Description
+Insert	Add node at beginning, end, or specific index
+Delete	Remove node by value or position
+Traverse	Visit and display each node
+Search	Find a node with specific data
+
+✅ Real-World Uses:
+Browser history (back and forward)
+
+Music playlist
+
+Undo feature in text editors
+
+✅ Flow Diagram (Text-Based) – Singly Linked List
+lua
+Copy
+Edit
+   Head
+    |
+    v
++--------+     +--------+     +--------+     +--------+
+|  10    | --> |  20    | --> |  30    | --> |  null  |
+|  next  |     |  next  |     |  next  |     |        |
++--------+     +--------+     +--------+     +--------+
+ Node 1         Node 2         Node 3         End of List
+Each node has:
+
+data (like 10, 20, 30)
+
+next (points to next node)
