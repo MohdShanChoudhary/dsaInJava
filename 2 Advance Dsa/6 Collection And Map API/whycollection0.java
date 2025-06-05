@@ -16,10 +16,21 @@
 // data store in object 
 // 
 
-
-
+// this is array list 
+import java.util.ArrayList;
 public class whycollection0 {
     public static void main(String[] args){
-
+        
+        ArrayList A1=new ArrayList();                       // i can add any type of data in it     
+        ArrayList<Integer> A2=new ArrayList<>();             // this is array deque 
+        A1.add(1);
+        A1.add(2);
+        A2.add(3);
+        A2.add(4);
+        A1.add(0,56);
+        System.out.println(A1);
+        System.out.println(A2);
+        A1.addAll(A2);
+        System.out.println(A1);
     }
 }
