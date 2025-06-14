@@ -9,7 +9,16 @@
 
 
 
-
+// | Function Name            | Purpose                         |
+// | ------------------------ | ------------------------------- |
+// | `addAt(int index, data)` | Add at a specific index         |
+// | `remove()`               | Remove the last element         |
+// | `removeFirst()`          | Remove the first element        |
+// | `removeAt(int index)`    | Remove element at a given index |
+// | `get(int index)`         | Get element at a specific index |
+// | `search(int data)`       | Search for a value              |
+// | `reverseIterative()`     | Reverse the list using a loop   |
+// | `clear()`                | Clear the entire list           | 
 
 
 
@@ -65,7 +74,7 @@ size++;
 // normal display
 }
    public void display() {
-    node temp = head;
+    node temp = head;  
     if (head == null) {
         System.out.println("empty");
     } else {
@@ -76,6 +85,60 @@ size++;
         System.out.println();
     }
 }
+// add at index 
+// Add element at specific index
+public void addindex(int index, int data) {
+    if (index < 0 || index > size) {
+        System.out.println("Please enter a valid index");
+        return;
+    }
+
+    if (index == 0) {
+        addf(data);
+        return;
+    }
+
+    if (index == size) {
+        add(data);
+        return;
+    }
+
+    node newnode = new node(data);
+    node temp = head;
+    
+    // Traverse t   o node just before the insertion point
+    for (int i = 0; i < index - 1; i++) {
+        temp = temp.next;
+    }
+
+    newnode.next = temp.next;
+    temp.next = newnode;
+    size++;
+}
+
+public void removel() {
+    if (head == null) {
+        System.out.println("List is already empty");
+        return;
+    }
+
+    if (head.next == null) {
+        // Only one element
+        head = tail = null;
+        size = 0;
+        return;
+    }
+
+    // More than one element
+    node temp = head;
+    for (int i = 0; i < size - 2; i++) {
+        temp = temp.next;
+    }
+
+    temp.next = null;
+    tail = temp;
+    size--;
+}
 
 // display reverse 
 public void displayerReverse(node head){
@@ -85,6 +148,21 @@ public void displayerReverse(node head){
 }
 
 
+// Remove the first element
+public void removef() {
+    if (head == null) {
+        System.out.println("Already empty");
+        return;
+    }
+
+    head = head.next; // Move head to next node
+    size--;
+
+    // If list becomes empty after removal
+    if (head == null) {
+        tail = null;
+    }
+}
 
     public static void main(String[] args) {
         MakeLlUsingClass4 ll1 = new MakeLlUsingClass4();

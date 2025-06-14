@@ -26,6 +26,7 @@ import java.util.*;
 public class Treeset4{
     public static void main(String[] args) {
         TreeSet a=new TreeSet();
+        TreeSet<String> set = new TreeSet<>();// this is right method 
         a.add(2);
         a.add(3);
 
