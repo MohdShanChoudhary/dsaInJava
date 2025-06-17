@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/2 Advance Dsa/2 Advance Dsa.iml" filepath="$PROJECT_DIR$/2 Advance Dsa/2 Advance Dsa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3 Advance Java/3 Advance Java.iml" filepath="$PROJECT_DIR$/3 Advance Java/3 Advance Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/4 JDBC/JDBC/JDBC.iml" filepath="$PROJECT_DIR$/4 JDBC/JDBC/JDBC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/4 JDBC/mysql-connector-j-9.3.0/mysql-connector-j-9.3.0/src/build/build.iml" filepath="$PROJECT_DIR$/4 JDBC/mysql-connector-j-9.3.0/mysql-connector-j-9.3.0/src/build/build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/4 JDBC/mysql-connector-j-9.3.0/mysql-connector-j-9.3.0/src/main/core-api/core-api.iml" filepath="$PROJECT_DIR$/4 JDBC/mysql-connector-j-9.3.0/mysql-connector-j-9.3.0/src/main/core-api/core-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/4 JDBC/mysql-connector-j-9.3.0/mysql-connector-j-9.3.0/src/main/core-impl/core-impl.iml" filepath="$PROJECT_DIR$/4 JDBC/mysql-connector-j-9.3.0/mysql-connector-j-9.3.0/src/main/core-impl/core-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/4 JDBC/mysql-connector-j-9.3.0/mysql-connector-j-9.3.0/src/demo/demo.iml" filepath="$PROJECT_DIR$/4 JDBC/mysql-connector-j-9.3.0/mysql-connector-j-9.3.0/src/demo/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/dsa_in_java.iml" filepath="$PROJECT_DIR$/.idea/dsa_in_java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/4 JDBC/mysql-connector-j-9.3.0/mysql-connector-j-9.3.0/src/generated/generated.iml" filepath="$PROJECT_DIR$/4 JDBC/mysql-connector-j-9.3.0/mysql-connector-j-9.3.0/src/generated/generated.iml" />
+      <module fileurl="file://$PROJECT_DIR$/4 JDBC/mysql-connector-j-9.3.0/mysql-connector-j-9.3.0/src/legacy/legacy.iml" filepath="$PROJECT_DIR$/4 JDBC/mysql-connector-j-9.3.0/mysql-connector-j-9.3.0/src/legacy/legacy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/4 JDBC/mysql-connector-j-9.3.0/mysql-connector-j-9.3.0/src/main/protocol-impl/protocol-impl.iml" filepath="$PROJECT_DIR$/4 JDBC/mysql-connector-j-9.3.0/mysql-connector-j-9.3.0/src/main/protocol-impl/protocol-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/4 JDBC/mysql-connector-j-9.3.0/mysql-connector-j-9.3.0/src/test/test.iml" filepath="$PROJECT_DIR$/4 JDBC/mysql-connector-j-9.3.0/mysql-connector-j-9.3.0/src/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/4 JDBC/mysql-connector-j-9.3.0/mysql-connector-j-9.3.0/src/main/user-api/user-api.iml" filepath="$PROJECT_DIR$/4 JDBC/mysql-connector-j-9.3.0/mysql-connector-j-9.3.0/src/main/user-api/user-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/4 JDBC/mysql-connector-j-9.3.0/mysql-connector-j-9.3.0/src/main/user-impl/user-impl.iml" filepath="$PROJECT_DIR$/4 JDBC/mysql-connector-j-9.3.0/mysql-connector-j-9.3.0/src/main/user-impl/user-impl.iml" />
+    </modules>
+  </component>
+</project>
